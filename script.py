@@ -8,7 +8,7 @@ from openai.embeddings_utils import distances_from_embeddings, indices_of_neares
 df = pd.read_csv("C:/Users/hp/Downloads/BooksDataSet.csv")
 
 # Obtain API key from OpenAI
-openai.api_key = "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"
+openai.api_key = "apikey"
  
 df.head()
 print(df.head())
