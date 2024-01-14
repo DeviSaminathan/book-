@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <center>
+        <div class = 'book-selected-banner' style="padding: 100px 0px;">
+            <h3 style="color: white;font-weight: lighter; background-color: rgba(0, 0, 0, 0.479);margin-bottom: 0; ">Books Similar to:</h3>
+            <h1 style="color: white;text-shadow: 5px 5px 18px black;font-weight: bold; background-color: rgba(0, 0, 0, 0.479); ">{{book_selected}}</h1>
+        </div>
+    </center>
+
+    <div class="row book-recommended">
+        {% for book in range(final_book_list|length) %}
+        <div class="col-md-3" style="margin-bottom: 40px;">
+                <div class="flip-card-inner">
+                    <h2 style="margin-top: 10px; margin-bottom: 10px;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;padding-right: 10px;">{{final_book_list[book]}}</h2>
+              </div> 
+        </div>
+        {% endfor %}
+        
+    </div>
+    
+    {% endblock %}
+    

@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block title %} HOME {% endblock %} {% block content
+    %}
+    <div class="home-screen" >
+      <div class="row" style="height: 100%;padding-bottom: 37px">
+        <div class="col-md-6">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1
+            style="
+              color: black;
+              font-weight: 800;
+              font-size: 55px;
+              padding-left: 40px;
+              text-shadow: 5px 5px 18px rgb(0, 0, 0);
+            "
+          >
+            Choose a book ...
+          </h1>
+        </div>
+        <div class="col-md-6" style="background-color: rgba(0, 0, 0, 0.568);height: 650px;">
+          <div class="row" >
+                <form action="#" method="POST" style="margin-top: 200px; padding-left: 40px; padding-right: 40px;">
+                    <h1 style="text-align: center; color: white; font-weight: 700 ;">By SVD</h1>
+                <select name="book-name" class="custom-select" >
+                    <option selected >Select Book</option>
+                    {% for book in book_list %}
+                    <option value="{{book}}" >{{book}}</option>
+                    {% endfor %}
+                </select>
+                <br><br>
+                <button type="submit" class="btn btn-primary btn-block" style="background-color : #a73737; border-color: black;" value="submit">Recommend Me !!</button>
+                </form>
+          </div>
+        </div>
+      </div>
+    
+      {% endblock %}
+    </div>
+    

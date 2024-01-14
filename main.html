@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block title %} HOME {% endblock %} {% block content
+    %}
+    <div class="home-screen" style="padding-bottom: 37px">
+      <div class="row">
+        <div class="col-md-6">
+          <br>
+          <br>
+          <br>
+          <h1
+            style="
+              color: black;
+              font-weight: 800;
+              font-size: 65px;
+              padding-left: 40px;
+              text-shadow: 5px 5px 18px rgb(253, 253, 253);
+            "
+          >
+          Hai there ! Welcome to personalized Book Recommendation .... Let's Start !
+          </h1>
+        </div>
+        <div class="col-md-6">
+          <div class="row" style="padding-left: 30px; padding-right: 30px;">
+            <div class="col-12" style="margin-top:200px; margin-bottom: 15px;">
+              <form action="/lp">
+               <button class="btn btn-block btn-primary" style="height: 50px;background-color: #a73737;border-color: black;">Login</button>
+              </form>
+              </div>
+    <div class="col-12" style="text-align: center;"> <h1 style="color: black; font-size: 50px; font-weight: 700;">OR</h1></div>
+            <div class="col-12" style="margin-top: 15px;">
+              <form action="/sp"> 
+              <button class="btn btn-block btn-primary" style="height: 50px;background-color : #a73737;border-color: black;" >Signup</button>
+            </form> 
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      {% endblock %}
+    </div>
+    

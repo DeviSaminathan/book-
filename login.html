@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">	
+		<style>
+			body{
+				background-color: wheat;
+				font-family: 'Poppins', sans-serif;
+			}
+			
+.inputplaceholder:focus{
+  box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
+		</style>	
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word" style="font-family: 'Poppins', sans-serif;font-weight: 600;">Login</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('login') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="username" name="username" class="inputplaceholder" type="text" placeholder="Enter Your Username"/></br></br>
+					<input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
+					<input type="submit" class="btn btn-primary btn-block" style="background-color : #a73737;border-color: black; height: 40px; width: 200px; color: white;" value="Sign In"></br></br>
+				</form>
+			</h2>
+			<p class="bottom">Don't have an account? <a class="bottom" href="{{url_for('sp')}}"> Sign Up here</a></p>
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+  }
+
+  body{
+      margin: none;
+      overflow-x: hidden;
+      background: wheat;
+      }
+
+*{
+
+    padding: 0;
+    margin: 0;
+
+    user-select: none;
+  }
+
+
+.nav-link{
+    font-size: 1.5rem;
+    margin: 0 50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.nav-link:hover{
+    color:black;
+    
+}
+.navbar-brand:hover{
+    color: black;
+    
+}
+.navbar-brand{
+  font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 18px rgb(136, 136, 136);
+}
+.navbar-lgbtn{
+  padding-right: 2rem;
+  font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 18px rgb(136, 136, 136);
+}
+.navbar{
+    color: white;
+    background: #a73737;
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737); 
+    background: linear-gradient(to right, #7a2828, #a73737); 
+    
+}
+
+
+.home-screen{
+  background-image: url("https://www.detroitlabs.com/wp-content/uploads/2018/02/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.data-info-row-1{
+    margin-top: 3rem;
+    line-height: 2;
+    color: wheat;
+    font-size: 1.5em;
+}
+
+
+#recommended-books{
+    text-align: center;
+    background-color: #ef8172;
+    padding: 200px 0px;
+    color: white;
+}
+
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-shadow: 5px 5px 18px rgb(0, 0, 0);
+  }
+
+  .book-selected-banner{
+      background-image: url("https://wp.stanforddaily.com/wp-content/uploads/2018/05/building-aisle-library-public-library-inventory-bookselling-24143-pxhere.com_-995x498.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+  .book-recommended{
+    background: wheat;
+    
+    padding-top: 40px;
+  }
+
+  .inputplaceholder {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px white;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+  
+  }
+.inputplaceholder:focus{
+  box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px white;
+}
+
+
+
